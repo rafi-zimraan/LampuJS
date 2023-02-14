@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <title>LAMPU JS</title>
+</head>
+<div class="flex justify-center items-center min-h-screen bg-gray-800 gap-10">
+  <!-- LAMPU 1 -->
+  <div class="flex flex-col gap-2">
+    <img src="images/Off.avif" id="lampu1">
+
+    <label for="default-toggle" class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" id="default-toggle" class="sr-only peer" onchange="saklar()">
+      <div
+        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+      </div>
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+    </label>
+
+    <button onclick="saklar('on', 1)" class="bg-black p-4 text-white">lampu ON 1</button>
+    <button onclick="saklar('off', 1)" class="bg-black p-4 text-white">lampu OFF 1</button>
+  </div>
+
+  <!-- LAMPU 2 -->
+  <div class="flex flex-col gap-2">
+    <img src="images/Off.avif" id="lampu2">
+    <button onclick="saklar('on', 2)" class="bg-black p-4 text-white">lampu ON 2</button>
+    <button onclick="saklar('off', 2)" class="bg-black p-4 text-white">lampu OFF 2</button>
+  </div>
+
+  <!-- LAMPU 3 -->
+  <div class="flex flex-col gap-2">
+    <img src="images/Off.avif" id="lampu3">
+    <button onclick="saklar('on', 3)" class="bg-black p-4 text-white">lampu ON 3</button>
+    <button onclick="saklar('off', 3)" class="bg-black p-4 text-white">lampu OFF 3</button>
+  </div>
+
+</div>
+
+<body>
+  <script src="saklar.js" type="application/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+
+</html>

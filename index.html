@@ -11,35 +11,41 @@
 </head>
 <div class="flex justify-center items-center min-h-screen bg-gray-800 gap-10">
   <!-- LAMPU 1 -->
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 items-center">
     <img src="images/Off.avif" id="lampu1">
-
-    <label for="default-toggle" class="relative inline-flex items-center cursor-pointer">
-      <input type="checkbox" id="default-toggle" class="sr-only peer" onchange="saklar()">
+    <label for="default-toggle1" class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" id="default-toggle1" class="sr-only peer" onchange="saklar()">
       <div
         class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
       </div>
-      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">CLick turn On</span>
     </label>
 
-    <button onclick="saklar('on', 1)" class="bg-black p-4 text-white">lampu ON 1</button>
-    <button onclick="saklar('off', 1)" class="bg-black p-4 text-white">lampu OFF 1</button>
   </div>
 
   <!-- LAMPU 2 -->
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 items-center">
     <img src="images/Off.avif" id="lampu2">
-    <button onclick="saklar('on', 2)" class="bg-black p-4 text-white">lampu ON 2</button>
-    <button onclick="saklar('off', 2)" class="bg-black p-4 text-white">lampu OFF 2</button>
+    <label for="default-toggle2" class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" id="default-toggle2" class="sr-only peer" onchange="saklar()">
+      <div
+        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+      </div>
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">CLick turn On</span>
+    </label>
   </div>
 
   <!-- LAMPU 3 -->
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 items-center">
     <img src="images/Off.avif" id="lampu3">
-    <button onclick="saklar('on', 3)" class="bg-black p-4 text-white">lampu ON 3</button>
-    <button onclick="saklar('off', 3)" class="bg-black p-4 text-white">lampu OFF 3</button>
+    <label for="default-toggle3" class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" id="default-toggle3" class="sr-only peer" onchange="saklar()">
+      <div
+        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+      </div>
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">CLick turn On</span>
+    </label>
   </div>
-
 </div>
 
 <body>
